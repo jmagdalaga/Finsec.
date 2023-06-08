@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/final_logo"
+        android:label="Finsec."
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.TransparentStatusBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".DisplaySchedule"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayScheduleDark"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleDetailActivityDark"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleListActivityDark"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationSystem"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationSystemDark"
+            android:exported="false" />
+        <activity
+            android:name=".ExpensePage"
+            android:exported="false" />
+        <activity
+            android:name=".ExpensePageDark"
+            android:exported="false" />
+        <activity
+            android:name=".AnotherCustomDialog"
+            android:exported="false" />
+        <activity
+            android:name=".AnotherCustomDialogDark"
+            android:exported="false" />
+        <activity
+            android:name=".GoalSavings"
+            android:exported="false" />
+        <activity
+            android:name=".GoalSavingsDark"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageDark"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpDark"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignInDark"
+            android:exported="false" />
+        <activity
+            android:name=".FrontPage"
+            android:exported="true"/>
+        <activity
+            android:name=".FrontPageDark"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

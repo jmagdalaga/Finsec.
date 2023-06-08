@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Throw Away Your Budget…Track Your Expenses Instead!"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="Budgeting gets all the attention.
+
+But tracking your spending is the real secret to saving more money in 2022.
+
+In fact, the most financially successful people in my life know where every penny goes each month.
+
+When you know where your money is going, you can make informed choices.
+
+For example, I spend $600/month playing golf.
+
+Is that good or bad?
+
+It depends!
+
+Golf is REALLY important to me.
+
+So much so that I’m willing to make sacrifices in other areas to maintain this expense.
+
+On the other hand, my wife and I recently decided that spending $3,000 per year on cable television wasn’t meaningful to us.
+
+With that knowledge, we found a way to cut our bill by over 60%.
+
+If you aren’t regularly tracking your expenses, you don’t know where your money is going. Which makes it impossible to how and where to save money.\n\nKnowledge is power. ❤" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp">
+
+            <!-- Add your desired views and their configuration here -->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

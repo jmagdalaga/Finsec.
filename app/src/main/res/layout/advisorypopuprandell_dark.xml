@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#343434"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Do Not Chase Returns"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="Whenever people invest, their primary concern is almost always about return. While it is obvious that we should be concerned with returns as I have never met anyone who invested and expected no return. However, returns are not the only thing you need to be concerned with. Even prior to concerning yourself with returns, what you may want to look at first is the risk. After all, returns are, in a great way, a function of the risks that you take. Many people would want high returns but might overlook the inherent risks those returns will bring. \n\nNever test the depth of the river with both feet.❤"
+            android:textColor="#F1F1F1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp">
+
+            <!-- Add your desired views and their configuration here -->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/schedbgdark"
+    tools:context=".SchedulepageFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgsalary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp"
+                    android:src="@drawable/notifframe"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarView"
+                    app:layout_constraintVertical_bias="0.01"/>
+
+                <TextView
+                    android:id="@+id/txtsalary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="156dp"
+                    android:elevation="20dp"
+                    android:fontFamily="@font/nunitobold"
+                    android:text="Salary"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.172"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarView"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/imgfoods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/notifframe"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.484"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgsalary"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnbudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginBottom="45dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/schedframedark"
+                    app:layout_constraintBottom_toTopOf="@+id/imgsalary"
+                    app:layout_constraintEnd_toStartOf="@+id/imgbtnexpenses2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarView"
+                    app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtbudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Budget"
+            android:textColor="#2D9D94"
+            app:layout_constraintBottom_toTopOf="@+id/txtbudgetnum"
+            app:layout_constraintEnd_toEndOf="@+id/imgbtnbudget"
+            app:layout_constraintStart_toStartOf="@+id/imgbtnbudget"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtsalarynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱ 200.00"
+            android:textColor="#2D9D94"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.979"
+            app:layout_constraintStart_toEndOf="@+id/txtsalary"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtbudgetarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:paddingEnd="10dp"
+            android:text="⬆"
+            android:textColor="#2D9D94"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtbudget"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imgbtnbudget"
+            app:layout_constraintTop_toTopOf="@+id/imgbtnbudget"
+            app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnexpenses2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/schedframedark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgbtnbudget"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarView"
+                    app:layout_constraintVertical_bias="0.007" />
+
+        <TextView
+            android:id="@+id/txtexpenses1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Expenses"
+            android:textColor="#D62279"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imgbtnexpenses2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txtexpensesnum1"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <TextView
+            android:id="@+id/txtexpensesnum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱ 180.13"
+            android:textColor="#D62279"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imgbtnexpenses2"
+            app:layout_constraintHorizontal_bias="0.606"
+            app:layout_constraintStart_toStartOf="@+id/imgbtnexpenses2"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView"
+            app:layout_constraintVertical_bias="0.015" />
+
+        <TextView
+            android:id="@+id/txtexpensesarrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotationX="-184"
+            android:scaleX="-1"
+            android:text="⬆"
+            android:textColor="#D62279"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtexpenses1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imgbtnexpenses2"
+            app:layout_constraintTop_toTopOf="@+id/imgbtnexpenses2"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <TextView
+            android:id="@+id/txtbudgetnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱ 200.00"
+            android:textColor="#2D9D94"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imgbtnbudget"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/txtbudgetarrow"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView"
+            app:layout_constraintVertical_bias="0.012" />
+
+        <TextView
+            android:id="@+id/txtfoodnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="244dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱ 180.13"
+            android:textColor="#D62279"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.807"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView"
+            app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/txtbill3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="244dp"
+                    android:elevation="20dp"
+                    android:fontFamily="@font/nunitobold"
+                    android:text="Foods"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txtfoodnum"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarView"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="340dp"
+                    android:layout_height="266dp"
+                    android:background="@drawable/tab_bg_dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.144" />
+                <View
+                    android:id="@+id/overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/semi_transparent"
+                    android:visibility="gone" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/add_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="70dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/nunitobold"
+                    android:text="actions"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:backgroundTint="@color/white"
+                    app:icon="@drawable/ic_add"
+                    app:iconTint="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/schedBudget_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:src="@drawable/budgetfabwhite"
+                    app:tint="@color/white"
+                    app:backgroundTint="@color/black"
+                    app:elevation="15dp"
+                    app:layout_constraintBottom_toTopOf="@+id/add_fab"
+                    app:layout_constraintEnd_toEndOf="@+id/add_fab" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/schedExpense_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:src="@drawable/expensefabwhite"
+                    app:tint="@color/white"
+                    app:backgroundTint="@color/black"
+                    app:elevation="15dp"
+                    app:layout_constraintBottom_toTopOf="@+id/schedBudget_fab"
+                    app:layout_constraintEnd_toEndOf="@+id/schedBudget_fab" />
+
+        <TextView
+            android:id="@+id/txtFABbudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Budget"
+            android:elevation="15dp"
+            android:textAllCaps="true"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/schedBudget_fab"
+            app:layout_constraintEnd_toStartOf="@+id/schedBudget_fab"
+            app:layout_constraintTop_toTopOf="@+id/schedBudget_fab" />
+
+        <TextView
+            android:id="@+id/txtFABexpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Expenses"
+            android:elevation="15dp"
+            android:textAllCaps="true"
+            android:textColor="#222222"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/schedExpense_fab"
+            app:layout_constraintEnd_toStartOf="@+id/schedExpense_fab"
+            app:layout_constraintTop_toTopOf="@+id/schedExpense_fab" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/schedBills_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:src="@drawable/billsfabwhite"
+                    app:tint="@color/white"
+                    app:backgroundTint="@color/black"
+                    app:elevation="15dp"
+                    app:layout_constraintBottom_toTopOf="@+id/schedExpense_fab"
+                    app:layout_constraintEnd_toEndOf="@+id/schedExpense_fab" />
+
+        <TextView
+            android:id="@+id/txtFABbills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Bills"
+            android:textAllCaps="true"
+            android:textColor="#022222"
+            android:textStyle="bold"
+            android:elevation="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/schedBills_fab"
+            app:layout_constraintEnd_toStartOf="@+id/schedBills_fab"
+            app:layout_constraintTop_toTopOf="@+id/schedBills_fab" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
